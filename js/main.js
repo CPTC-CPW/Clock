@@ -6,12 +6,12 @@ function currentTime() {
     var h = now.getHours();
     var m = now.getMinutes();
     var s = now.getSeconds();
-    m = checkTime(m);
-    s = checkTime(s);
+    m = addZero(m);
+    s = addZero(s);
     document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
     var t = setTimeout(function () { currentTime(); }, 500);
 }
-function checkTime(i) {
+function addZero(i) {
     if (i < 10) {
         i = "0" + i;
     }
