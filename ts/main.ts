@@ -17,21 +17,21 @@ function currentTime():void{
     m = addZero(m);
     s = addZero(s);
 
-    //output format to #clock
+    //output format to id="clock"
     document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
     //output every half second
     let t = setTimeout(function(){ currentTime() }, 500);
 }
 
 /**
- * adds a zero in front of a number variable (clock format)
+ * adds a zero in front of a number variable if single digit (clock format)
  * @param number to add a zero to
- * @returns number with 0 added in front of it
+ * @returns number with 0 added in front of it if it is a single digit.
  */
-function addZero(i):number {
-    if (i < 10) {
-        i = "0" + i;
+function addZero(num):number {
+    if (num < 10) {
+        num = "0" + num;
     }
-    return i;
+    return num;
 }
 

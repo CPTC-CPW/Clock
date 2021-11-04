@@ -11,9 +11,9 @@ function currentTime() {
     document.getElementById("clock").innerHTML = h + ":" + m + ":" + s;
     var t = setTimeout(function () { currentTime(); }, 500);
 }
-function addZero(i) {
-    if (i < 10) {
-        i = "0" + i;
+function addZero(num) {
+    if (num < 10) {
+        num = "0" + num;
     }
-    return i;
+    return num;
 }
