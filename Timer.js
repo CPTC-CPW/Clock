@@ -35,24 +35,24 @@
 
 // For testing purposes, we'll just increment
 // this and send it out to the console.
-var justSomeNumber = 0;
+//var justSomeNumber = 0;
 
 // Define the work to be done
-var doWork = function() {
-    console.log(++justSomeNumber);
-};
+//var doWork = function() {
+//    console.log(++justSomeNumber);
+//};
 
 // Define what to do if something goes wrong
-var doError = function() {
-    console.warn('The drift exceeded the interval.');
-};
+//var doError = function() {
+//    console.warn('The drift exceeded the interval.');
+//};
 
 // (The third argument is optional)
-var ticker = new AdjustingInterval(doWork, 1000, doError);
+//var ticker = new AdjustingInterval(doWork, 1000, doError);
 
 // You can start or stop your timer at will
-ticker.start();
-ticker.stop();
+//ticker.start();
+//ticker.stop();
 
 // You can also change the interval while it's in progress
-ticker.interval = 99;
+//ticker.interval = 99;
