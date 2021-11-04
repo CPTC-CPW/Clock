@@ -1,10 +1,9 @@
 window.onload = function(){
-
     currentTime();
 }
 
 /**
- * outputs current time to id="clock" every half second.
+ * outputs current time to id="clock" every half second
  */
 function currentTime():void{
     //create a date object, set variables from hour/minute/second fields
